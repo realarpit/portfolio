@@ -3,59 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Page</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-            <h1><i><u>Portfolio Page</u></i></h1>
+        <div class="header">
+            <h2>Portfolio</h2>
+
+            <div class="anc">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+        </div>
     </header>
 
-    
-    
     <main>
-        <big>Click to directly see my porfolio:</big>
-    <section>
-    <a href="Education.html">Education</a>
-    </section>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="pic">
+                <img src="images/portfolio.jpeg" alt="Profile Image">
+            </div>
 
-    <br>
-    <section>
-    <a href="Experience.html">Experience</a>
-    </section>
-    <br>
-    <section>
-    <a href="Projects.html">Projects</a>
-    </section>
-    <br>
-    <section>
-    <a href="ContactMe.html">Contact Me</a>
-    </section>
-    <br>
+            <div class="intro">
+                <h1>Hi, I'm Arpit Jaiswal</h1>
+                <p>I'm a passionate web developer with experience in creating dynamic and responsive websites.</p>
+                <p>An aspiring software engineer.</p>
+                <a href="#contact-section">
+                <button id="contact">Get in touch!</button>
+                </a>
+            </div>
+        </section>
 
-    <article>my story -> I am currectly 19 years old. I have started learning web development during summer vacations, in which I will have to learn html, css, javascript.</article>
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
 
-    <hr>
-    <aside>this is an ad~</aside>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="images/html.png" alt="HTML">
+                </div>
 
-    <a href="https://github.com/realarpit" target="_main">
-        <img src="https://brand.github.com/_next/static/media/logo-03.cc5e5332.png" alt="GitHub" height="50"/>
-    </a>
-    <a href="https://open.spotify.com/" target="_main">
-        <img src="https://cdn.logojoy.com/wp-content/uploads/20240521122203/2013-spotify-logo-600x319.png" alt="Spotify" height="50"/>
-    </a>
-    <hr>
+                <div class="skill-item">
+                    <img src="images/css.png" alt="CSS">
+                </div>
 
-    <p>Message for you - </p>
-    <div>
-        <p>hi</p>
-        <p>hello</p>
-    </div>
-    <span>bye</span>
+                <div class="skill-item">
+                    <img src="images/js.png" alt="JavaScript">
+                </div>
 
+                <div class="skill-item">
+                    <img src="images/c.png" alt="C">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/cpp.png" alt="C++">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/python.png" alt="Python">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/mysql.png" alt="MySQL">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Porfolio</h3>
+                    <p>A responsive portfolio website showcasing my skills and projects.
+
+                    </p>
+                    <a href="https://realarpit.github.io/portfolio/" target="_blank">
+                        <button>Link</button>
+                    </a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Amazon Clone</h3>
+                    <p>Clone of the Amazon e-commerce website with similar functionality and design.</p>
+                    
+                    <a href="https://realarpit.github.io/amazon_clone/" target="_blank">
+                        <button>Link</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact-section">
+            <h2>Contact Me</h2>
+            <p>Have a thought in mind to connect? Feel free to reach out!</p>
+        <form action="action.php">
+            <div class="left-form">
+            <input type="text" placeholder="Username">
+            <br>
+            <input type="email" placeholder="Email">
+             <br>
+            <input type="text" placeholder="Place">
+           
+            </div>
+            <div class="right-form">
+            <p>For contacting me -</p>
+            <textarea name="feedback" rows="12">Write a message!</textarea>
+            <br><br>
+            </div>
+        </form>
+        <form action="action.php">
+            <input type="submit" value="submit" class="submit">
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/realarpit" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/arpit-jaiswal-a88a1337a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+            <a href="mailto:thearpitd3v@gmail.com">Email</a>
+        </div>
+        </section>
     </main>
 
-    <footer>
-        <h5>contact me at my <a href="mailto:arpitcodes4l@gmail.com">email</a></h5>
-    </footer>
 </body>
 </html>
