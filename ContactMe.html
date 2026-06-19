@@ -3,33 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header><h1><u>Contact Me</u></h1></header>
+
+    <header>
+        <div class="header">
+            <h2>Portfolio</h2>
+
+            <div class="anc">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+        </div>
+    </header>
 
     <main>
-        <h3>Enter your details:</h3>
-        <br>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="pic">
+                <img src="images/portfolio.jpeg" alt="Profile Image">
+            </div>
+
+            <div class="intro">
+                <h1>Hi, I'm Arpit Jaiswal</h1>
+                <p>I'm a passionate web developer with experience in creating dynamic and responsive websites.</p>
+                <p>An aspiring software engineer.</p>
+                <a href="#contact-section">
+                <button id="contact">Get in touch!</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="images/html.png" alt="HTML">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/css.png" alt="CSS">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/js.png" alt="JavaScript">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/c.png" alt="C">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/cpp.png" alt="C++">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/python.png" alt="Python">
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/mysql.png" alt="MySQL">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Porfolio</h3>
+                    <p>A responsive portfolio website showcasing my skills and projects.
+
+                    </p>
+                    <a href="https://realarpit.github.io/portfolio/" target="_blank">
+                        <button>Link</button>
+                    </a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Amazon Clone</h3>
+                    <p>Clone of the Amazon e-commerce website with similar functionality and design.</p>
+                    
+                    <a href="https://realarpit.github.io/amazon_clone/" target="_blank">
+                        <button>Link</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact-section">
+            <h2>Contact Me</h2>
+            <p>Have a thought in mind to connect? Feel free to reach out!</p>
         <form action="action.php">
+            <div class="left-form">
             <input type="text" placeholder="Username">
             <br>
-            <input type="number" placeholder="Phone number">
-            <br><br>
-
-            <p>Select your city -</p>
-            <select name="state">
-            <option value="UP">UP</option>
-            <option value="WB">WB</option>
-            <option value="Delhi">Delhi</option>
-        </select>
-
+            <input type="email" placeholder="Email">
+             <br>
+            <input type="text" placeholder="Place">
+           
+            </div>
+            <div class="right-form">
             <p>For contacting me -</p>
-            <textarea name="feedback" rows="5">Enter your feedback</textarea>
+            <textarea name="feedback" rows="12">Write a message!</textarea>
             <br><br>
-
-            <input type="submit" value="submit">
+            </div>
         </form>
+        <form action="action.php">
+            <input type="submit" value="submit" class="submit">
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/realarpit" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/arpit-jaiswal-a88a1337a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+            <a href="mailto:thearpitd3v@gmail.com">Email</a>
+        </div>
+        </section>
     </main>
 </body>
 </html>
