@@ -329,7 +329,7 @@ body{
 
     /* Projects Section */
     .projects {
-        min-height: auto;
+        min-height: 80vh;
         padding: 60px 20px;
     }
 
