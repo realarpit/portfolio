@@ -131,7 +131,9 @@ body{
 
 /* Projects Section */
 .projects{
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
+    padding: 80px 20px;
     background-color: #111827;
     display: flex;
     align-items: center;
@@ -180,13 +182,14 @@ body{
 
 .contact{
     background-color: #1F2937;
-    height: 80vh;
-    
+    min-height: 80vh;
+    height: auto;
+    padding: 80px 20px;
     flex-direction:column;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding: 40px;
+    /* padding: 40px; */
 }
 .left-form{
     display: flex;
@@ -208,9 +211,10 @@ body{
     height: 40px;
 }
 .contact h2{
-    color:white;
-    font-size:36px;
-      text-align: center;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 .contact form{
     margin-top: 30px;
@@ -223,9 +227,14 @@ body{
 .contact p{
     color: #D1D5DB;
     font-size: 14px;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 5px;
 }
 .contact input[type="submit"]{
-    width:500px;
+    width:100%;
+    max-width:500px;
 }
 .contact input{
     width: 100%;
@@ -234,8 +243,8 @@ body{
     border-radius: 6px;
 }
 .contact textarea{
-    width: 300px;
-    height:150px;
+    width: 100%;
+    min-height:100px;
     padding: 12px;
     border: none;
     border-radius: 6px;
@@ -374,5 +383,46 @@ body{
     .social-links {
         flex-wrap: wrap;
         gap: 15px;
+    }
+}
+
+/* small devices */
+@media (max-width: 480px) {
+
+    .projects {
+        padding: 80px 15px;
+    }
+
+    .projects h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .project-list {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .project-item {
+        max-width: 100%;
+        padding: 18px;
+    }
+
+    .contact {
+        padding: 80px 15px;
+    }
+
+    .contact form {
+        gap: 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links a {
+        width: 100%;
+        text-align: center;
     }
 }
