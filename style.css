@@ -37,14 +37,17 @@ body{
 
 /* Hero Section */
 .hero{
-    min-height:65vh;
+    min-height: 65vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 80px;
     background-color: #1F2937;
     padding: 50px;
 }
-
+.intro{
+    max-width: 650px;
+}
 .pic{
     width: 300px;
     height: 300px;
